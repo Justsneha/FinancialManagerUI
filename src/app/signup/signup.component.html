@@ -21,8 +21,8 @@
           </div>
           <div class="input-box">
             <span class="details">Business Type</span>
-            <select name="Business Type" [(ngModel)]="factoryobject.BusinessType" height="45ppx">
-              <option value=" ">Select Business Type:</option>
+            <select name="Business Type" height="45px">
+              <option value="Select Business Type">Select Business Type:</option>
               <option value="Individual">Individual</option>
               <option value="Partnership">Partnership</option>
               <option value="Cooperation">Cooperation</option>
@@ -32,6 +32,14 @@
           <div class="input-box">
             <span class="details">Annual Income</span>
             <input type="text" [(ngModel)]="factoryobject.AnnualIncome" placeholder="Enter your Annual Income" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Business Location</span><span class="font-size">(Cannot be a P.O. box)</span>
+            <input type="text" [(ngModel)]="factoryobject.BusinessLocation" placeholder="Enter your Business Location" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Business Mailing Location</span><span class="font-size">(If Different from Business Location)</span>
+            <input type="text" [(ngModel)]="factoryobject.BusinessMailingLocation" placeholder="Enter your Business Mailing Location" required>
           </div>
           <div class="input-box">
             <span class="details">Email</span>

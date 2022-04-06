@@ -79,6 +79,8 @@ a {
 .styled-table tbody tr:nth-of-type(even) {
   background-color: #f3f3f3;
 }
+.font-size
+  {font-size: 10px;}
 
 .styled-table tbody tr:last-of-type {
   border-bottom: 2px solid #009879;
@@ -98,6 +100,7 @@ a {
 	border: none;
 	transition: all 0.4s ease 0s;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
@@ -238,12 +241,12 @@ form .user-details .input-box{
   .user-details::-webkit-scrollbar{
     width: 5px;
   }
-  }
   @media(max-width: 459px){
   .container .content .category{
     flex-direction: column;
   }
+  
 }
-
+ }
 
 

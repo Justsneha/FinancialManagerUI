@@ -9,4 +9,6 @@ export class Factoryclass {
     public AnnualIncome!:Number;
     public Email!:String;
     public PhoneNumber!:Number;
+    public BusinessLocation!:String;
+    public BusinessMailingLocation!:String;
 }
