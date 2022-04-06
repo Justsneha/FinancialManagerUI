@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+<div class="form-group">
+  <div class="container">
+    <div class="title">Loan Application</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Applicant's Full Name</span>
+            <input type="text" [(ngModel)]="factoryobject.FullName" placeholder="Enter your full name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Taxpayer ID Number</span>
+            <input type="text" [(ngModel)]="factoryobject.TaxID" placeholder="Enter your Tax ID" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Business Type</span>
+            <select name="Business Type" [(ngModel)]="factoryobject.BusinessType" height="45ppx">
+              <option value=" ">Select Business Type:</option>
+              <option value="Individual">Individual</option>
+              <option value="Partnership">Partnership</option>
+              <option value="Cooperation">Cooperation</option>
+              <option value="Others">Others</option>
+          </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Annual Income</span>
+            <input type="text" [(ngModel)]="factoryobject.AnnualIncome" placeholder="Enter your Annual Income" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" [(ngModel)]="factoryobject.Email" placeholder="Enter your E-mail address" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" [(ngModel)]="factoryobject.PhoneNumber" placeholder="Enter your Phone Number" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Proceed" (click)="routetosecondpage()">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
