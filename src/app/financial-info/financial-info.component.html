@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Financial Information</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Cash Flow To Debt</span>
+            <input type="text" [(ngModel)]="factoryobject.CASH_FLOW_TO_DEBT" placeholder="Enter the Cash Flow To Debt" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Net profit Margin</span>
+            <input type="text" [(ngModel)]="factoryobject.NET_PROFIT_MARGIN" placeholder="Enter the Net profit Margin" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Gross Margin Ratio</span>
+            <input type="text" [(ngModel)]="factoryobject.GROSS_MARGIN_RATIO" placeholder="Enter the Gross Margin Ratio" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Quick Ratio</span>
+            <input type="text" [(ngModel)]="factoryobject.QUICK_RATIO" placeholder="Enter the Quick ratio" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Accounts Receivable Turnover</span>
+            <input type="text" [(ngModel)]="factoryobject.ACCOUNTS_RECEIVABLE_TURNOVER" placeholder="Enter the Accounts Receivable Turnover" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Inventory Turnover Ratio</span>
+            <input type="text" [(ngModel)]="factoryobject.INVENTORY_TURNOVER_RATIO" placeholder="Enter the Inventory Turnover Ratio" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Sales Per Employee</span>
+            <input type="text" [(ngModel)]="factoryobject.SALES_PER_EMPLOYEE" placeholder="Enter the Sales Per Employee" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Proceed" (click)="routetoloanslist()">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

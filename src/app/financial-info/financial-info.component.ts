@@ -4,22 +4,23 @@ import { Subscription } from 'rxjs';
 import { Factoryclass } from '../factoryclass';
 import { ServiceLogicService } from '../service-logic.service';
 
-
 @Component({
-  selector: 'app-detailsshowing-component',
-  templateUrl: './detailsshowing-component.component.html',
-  styleUrls: ['./detailsshowing-component.component.css']
+  selector: 'app-financial-info',
+  templateUrl: './financial-info.component.html',
+  styleUrls: ['./financial-info.component.css']
 })
-export class DetailsshowingComponentComponent implements OnInit {
-  
+export class FinancialInfoComponent implements OnInit {
+
   public factoryobject= new Factoryclass();
 
   constructor(private router:Router,private route:ActivatedRoute,public serviceobj:ServiceLogicService) { }
 
   ngOnInit(): void {
   }
-  backtomainpage()
+
+  routetoloanslist()
   {
-    this.router.navigate(['./mainpage']);
+    this.router.navigate(['./LoanList']);
   }
+
 }

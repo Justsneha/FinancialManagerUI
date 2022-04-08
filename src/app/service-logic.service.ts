@@ -4,8 +4,6 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 import { Observable, throwError } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { catchError } from 'rxjs';
-import { MainUIComponentComponent } from './main-uicomponent/main-uicomponent.component';
-import { DetailsshowingComponentComponent } from './detailsshowing-component/detailsshowing-component.component';
 import { Factoryclass } from './factoryclass';
 
 @Injectable({

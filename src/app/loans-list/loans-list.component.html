@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+<div class="form-group">
+  <div class="container">
+    <div class="title">Loan List</div>
+    <div class="content">
+      <form action="#">
+        <div class="loan-list">
+          <h3>Congratulations!! We have found 3 Banks for you</h3>
+          <hr>
+          <table class="List">
+              <tr>
+                <th *ngFor = "let column of headers">
+                    {{column}}
+                  </th>
+              </tr>
+              <tr *ngFor = "let row of rows">
+                <td *ngFor = "let column of headers">
+                     {{row[column]}}
+                </td>
+              </tr>
+          </table>
+        </div>
+        <div class="button">
+            <input type="submit" value="Proceed" (click)="routetofinalpage()">
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+<div class="form-group">
+  <div class="container">
+    <div class="title">Loan Request</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Loan Type</span>
+            <select name="Business Type" height="45px">
+            <option value=" ">Select Loan Type:</option>
+              <option value="Individual">Business Line of Credit</option>
+              <option value="Partnership">Term Loan</option>
+              <option value="Cooperation">Commercial Real Estate Loan</option>
+              <option value="Cooperation">SBA Loan</option>
+              <option value="Others">Others</option>
+          </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Amount Requested</span>
+            <input type="text" [(ngModel)]="factoryobject.Amount_Requested" placeholder="Enter Requested Amount" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Description of Other</span>
+            <input type="text" [(ngModel)]="factoryobject.Description" placeholder="Enter the Description if selected Others" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Length of Term</span>
+            <input type="text" [(ngModel)]="factoryobject.Term_Length" placeholder="Enter Term Length" required>
+          </div>
+        </div>
+        <div class="declaration">
+            <input type="checkbox">
+            <span class="details"> *For commercial Real Estate Loan, please complete and include a REAL ESTATE ADDENDUM form. By signing this application, 
+                applicant attests that information provided on Real Estate Addendum is true and correct. </span>
+        </div>
+        <div class="button">
+            <input type="submit" value="Proceed" (click)="routetofinancialinfo()">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </body>
+  </html>
+
